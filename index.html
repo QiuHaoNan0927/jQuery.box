@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			.active{
+				background: red;
+			}
+			.on{
+				background: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="tab1">
+			<div class="tabBox">
+				<div class="tab">1</div>
+				<div class="tab">2</div>
+				<div class="tab">3</div>
+			</div>
+			<div class="itemBox">
+				<div class="item">111</div>
+				<div class="item">222</div>
+				<div class="item">333</div>
+			</div>
+		</div>
+		<div class="tab2">
+			<div class="tabBox">
+				<div class="tab">1</div>
+				<div class="tab">2</div>
+				<div class="tab">3</div>
+			</div>
+			<div class="itemBox">
+				<div class="item">111</div>
+				<div class="item">222</div>
+				<div class="item">333</div>
+			</div>
+		</div>
+		<select name="">
+			<option value=""></option>
+		</select>
+		<div class="select">
+			<div class="option"></div>
+			<ul>
+				<li class="list">1</li>
+				<li class="list">2</li>
+				<li class="list">3</li>
+			</ul>
+		</div>
+		<div class="back" style="height: 2000px;"></div>
+		<div class="red" style="height: 20px; background: red; position: fixed; top: 50%; width: 100%;"></div>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>	
+		<!--<script src="js/PRselector.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/jQuery.box.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			$(".tab1").tab({index:1})
+			$(".tab2").tab({class:'on'})
+			$('.red').backTop(true)
+			$('.select').select({index:0})
+		</script>
+	</body>
+</html>
